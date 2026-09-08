@@ -49,6 +49,7 @@ if ! command -v npx >/dev/null 2>&1; then
   echo "    npx skills add https://github.com/op7418/guizang-yingzao-skill --skill yingzao -y -g"
   exit 0
 fi
+npx skills add https://github.com/Doki21yy/yingzao-cli --skill yingzao-cli -y -g || npx skills add "" --skill yingzao-cli -y -g || true
 npx skills add https://github.com/op7418/guizang-yingzao-skill --skill yingzao -y -g || true
 if [[ -f "$ROOT/skills/yingzao-cli/SKILL.md" ]]; then
   npx skills add "$ROOT" --skill yingzao-cli -y -g 2>/dev/null || true
