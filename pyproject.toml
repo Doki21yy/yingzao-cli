@@ -1,0 +1,17 @@
+[project]
+name = "yingzao-cli"
+version = "0.1.0"
+description = "CLI wrapper for op7418/guizang-yingzao-skill (Yingzao). Deterministic tools only; poster generation still needs an Agent + image model."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+yingzao = "yingzao_cli.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["yingzao_cli*"]
